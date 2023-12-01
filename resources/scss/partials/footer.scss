@@ -1,0 +1,52 @@
+@use "../settings/content" as *;
+
+footer {
+    background-color: #3c3c3c;
+    padding-left: $spacing-17;
+
+    .container-footer {
+        display: flex;
+        align-items: stretch;
+        column-gap: $spacing-7;
+
+        .logo {
+            max-width: fit-content;
+            background-color: #1e1e1e;
+            padding: $spacing-10 $spacing-25;
+            border-radius: $borderRadius-lg 0 0 $borderRadius-lg;
+        }
+        nav {
+            width: 100%;
+            padding: $spacing-19 136px 0;
+            background-color: $primary;
+            background-image: url("#{$path}/backgrounds/waves.png");
+            color: $white;
+
+            .menu {
+                span {
+                    font-size: $heading-h4;
+                    font-weight: $fontWeight-bold;
+                }
+
+                ul {
+                    margin-top: $spacing-4;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: $spacing-4;
+
+                    li {
+                        a {
+                            color: $white;
+                            font-weight: $fontWeight-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: $spacing-6 0;
+        font-weight: $fontWeight-bold;
+    }
+}

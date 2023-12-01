@@ -1,0 +1,21 @@
+@use "../settings/content" as *;
+
+header {
+    background-color: $primary;
+    padding: $spacing-3 0;
+    margin-bottom: 400px;
+
+    .container {
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                align-items: center;
+                column-gap: $spacing-6;
+            }
+        }
+    }
+}
